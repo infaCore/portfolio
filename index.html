@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InfaCore — a tech enthusiast's notebook</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="w">
+<header>
+  <a class="mark" href="#top">Infa<span>Core</span></a>
+  <nav><a href="#about">About</a><a href="#now">Now</a><a href="#projects">Projects</a><a href="#notes">Notes</a><a href="#cli">Terminal</a><a href="#contact">Contact</a>
+  <button id="pk" aria-label="Open command palette">Jump <span class="kbd">/</span></button><button id="th" aria-label="Toggle theme">◐</button></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <canvas id="g3" aria-hidden="true"></canvas>
+  <div class="pill"><span class="dot"></span><span id="up">online</span></div>
+  <h1>I take tech apart to see <mark>how it thinks</mark>.</h1>
+  <p>Hi, I'm Sumit, a tech enthusiast. This is my notebook for Linux setups, hardware tinkering, AI experiments and open source. Some of it works. Some of it teaches me something else.</p>
+  <a class="btn" href="#projects">See what I'm building</a><a class="btn o" href="#notes">Read the notes</a><a class="btn o" href="#contact">Get a website</a>
+</div>
+
+<div class="bento" id="now">
+  <div class="c s4"><div class="lab">Right now</div><h3>Learning by breaking things on purpose</h3><p>I'm deep into customizing a Linux desktop, running small AI models on everyday hardware, and learning enough shell to automate the boring parts of my day.</p>
+    <div class="chips"><span>Linux</span><span>KDE Plasma</span><span>Python</span><span>Local AI</span><span>Git</span></div></div>
+  <div class="c s2 acc"><div class="lab">Mantra</div><div class="big">Explore.<br>Build.<br>Break.<br>Rebuild.</div></div>
+  <div class="c s2 h"><div class="lab">Daily driver</div><h3>Linux</h3><p>Always tweaking, never finished.</p></div>
+  <div class="c s2 h lime"><div class="lab">Tip</div><h3 id="tip" style="font-size:1rem"></h3><button class="btn" id="nt" style="margin-top:14px;padding:8px 14px;font-size:.82rem">Another →</button></div>
+  <div class="c s2"><div class="lab">Open source</div><h3>Share everything</h3><p>If I build it, the code goes public so someone else can improve it.</p></div>
+</div>
+
+<section id="about">
+  <h2>About</h2><p class="sub">The person behind InfaCore.</p>
+  <div class="c s6"><h3>Sumit Kumar</h3><p style="margin-bottom:18px">I'm a tech enthusiast and the creator of InfaCore. I explore Linux, hardware, AI and open source, build my own projects, and share what I learn along the way.</p>
+  <div class="chips"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=infactuatedcore@gmail.com" target="_blank" rel="noopener" class="btn" style="padding:9px 16px;font-size:.85rem">Email me</a><a href="https://instagram.com/infacore" class="btn o" style="padding:9px 16px;font-size:.85rem;margin:0" target="_blank" rel="noopener">Instagram @infacore</a><a href="https://youtube.com/@infacore" class="btn o" style="padding:9px 16px;font-size:.85rem;margin:0" target="_blank" rel="noopener">YouTube @infacore</a></div></div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2><p class="sub">What's on my bench. Placeholders for now, swap in your own.</p>
+  <div class="pg" id="pg"></div>
+</section>
+
+<section id="notes">
+  <h2>Notes</h2><p class="sub">Short write-ups from things I learned.</p>
+  <div class="c s6" id="nl"></div>
+</section>
+
+<section id="cli">
+  <h2>Terminal</h2><p class="sub">Type <b>help</b>.</p>
+  <div class="cli"><div id="o" role="log" aria-live="polite"></div><label class="ln"><span>guest@infacore:~$</span><input id="c" autocomplete="off" spellcheck="false" aria-label="Command"></label></div>
+</section>
+<section id="contact">
+  <h2>Contact</h2><p class="sub">Need a website? Tell me what you have in mind and I'll reply by email.</p>
+  <div class="c s6"><form class="fm" id="cf" novalidate>
+    <div class="f"><label for="fn">Your name *</label><input id="fn" autocomplete="name"></div>
+    <div class="f"><label for="fe">Your email *</label><input id="fe" type="email" autocomplete="email"></div>
+    <div class="f"><label for="ft">Type of website *</label><select id="ft"><option value="">Choose one…</option><option>Personal portfolio</option><option>Business / company site</option><option>Landing page</option><option>Online store</option><option>Blog or docs</option><option>Web app / tool</option><option>Something else</option></select></div>
+    <div class="f"><label for="fb">Budget</label><select id="fb"><option value="">Not sure yet</option><option>Under $100</option><option>$100 – $500</option><option>$500 – $1,500</option><option>$1,500+</option></select></div>
+    <div class="f"><label for="fd">Deadline</label><select id="fd"><option value="">Flexible</option><option>Within 1 week</option><option>Within 1 month</option><option>1 – 3 months</option></select></div>
+    <div class="f"><label for="fr">Reference sites (optional)</label><input id="fr" placeholder="Links to sites you like"></div>
+    <div class="f full"><label for="fx">Describe your website *</label><textarea id="fx" placeholder="What is it for? Who will use it? Pages or features you need, style you like…"></textarea></div>
+    <div class="f full acts"><button class="btn" type="submit">Send request</button></div>
+    <p class="full" id="fs" role="status" aria-live="polite"></p>
+    <div class="full fo" id="fo"><b>Your message is ready. Pick any option:</b><textarea id="fm" readonly rows="8" aria-label="Your message"></textarea><div class="acts"><a class="btn" id="gm" target="_blank" rel="noopener">Open in Gmail</a><a class="btn o" id="ml">Open email app</a><button class="btn o" type="button" id="cp2">Copy message</button></div><p id="fs2">Then press Send in your email. It goes to infactuatedcore@gmail.com</p></div>
+  </form>
+  <div class="chips" style="margin-top:14px"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=infactuatedcore@gmail.com" target="_blank" rel="noopener" class="btn o" style="padding:9px 16px;font-size:.85rem;margin:0">infactuatedcore@gmail.com</a><button type="button" class="btn o" id="ce" style="padding:9px 16px;font-size:.85rem;margin:0">Copy email</button><a href="https://instagram.com/infacore" class="btn o" style="padding:9px 16px;font-size:.85rem;margin:0" target="_blank" rel="noopener">Instagram @infacore</a><a href="https://youtube.com/@infacore" class="btn o" style="padding:9px 16px;font-size:.85rem;margin:0" target="_blank" rel="noopener">YouTube @infacore</a></div></div>
+</section>
+</main>
+
+<footer><span>InfaCore © 2026 · built by hand, no frameworks</span>
+<div><a href="https://mail.google.com/mail/?view=cm&fs=1&to=infactuatedcore@gmail.com" target="_blank" rel="noopener">Email</a><a href="https://instagram.com/infacore" target="_blank" rel="noopener">Instagram</a><a href="https://youtube.com/@infacore" target="_blank" rel="noopener">YouTube</a></div></footer>
+</div>
+
+<div id="pal" role="dialog" aria-label="Jump to"><div class="pb"><input id="pq" placeholder="Jump to…" aria-label="Search sections"><div id="pl"></div></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
